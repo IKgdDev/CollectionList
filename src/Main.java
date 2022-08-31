@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -73,7 +72,7 @@ public class Main {
         }
     }
 
-    public static void shopList(List shopCart) {
+    public static void shopList(List<String> shopCart) {
         System.out.println("\nСписок покупок:");
         for (int i = 0; i < shopCart.size(); i++) {
             System.out.println((i + 1) + ". " + shopCart.get(i));
