@@ -47,9 +47,7 @@ public class Main {
                         index = shopCart.indexOf(input) + 1;
                     }
 
-                    String remPurchase = shopCart.get(index - 1);
-                    shopCart.remove(index - 1);
-                    System.out.println("Покупка \"" + remPurchase + "\" удалена.");
+                    System.out.println("Покупка \"" + shopCart.remove(index - 1) + "\" удалена.");
                     shopList(shopCart);
                     break;
                 }
